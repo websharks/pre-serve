@@ -1,0 +1,49 @@
+{
+  "name": "websharks/pre-serve",
+  "homepage": "https://github.com/websharks/pre-serve",
+  "description": "Preserves content inside <pre>, <code>, <samp> tags.",
+  "keywords": ["websharks", "wpsharks", "shortcode", "samples"],
+
+  "type": "project",
+  "license": "GPL-3.0+",
+
+  "authors": [{
+    "name": "wpsharks",
+    "homepage": "https://wpsharks.com",
+    "role": "company"
+  }, {
+    "name": "jaswsinc",
+    "homepage": "https://jaswsinc.com",
+    "role": "developer"
+  }, {
+    "name": "raamdev",
+    "homepage": "http://raam.org",
+    "role": "developer"
+  }],
+
+  "support": {
+    "source": "https://github.com/websharks/pre-serve",
+    "issues": "https://github.com/websharks/pre-serve/issues"
+  },
+
+  "require-dev": {},
+
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+
+  "autoload": {
+    "psr-4": {
+      "WebSharks\\WpSharks\\Preserve\\Classes\\": "src/includes/classes",
+      "WebSharks\\WpSharks\\Preserve\\Functions\\": "src/includes/functions",
+      "WebSharks\\WpSharks\\Preserve\\Interfaces\\": "src/includes/interfaces",
+      "WebSharks\\WpSharks\\Preserve\\Traits\\": "src/includes/traits"
+    }
+  },
+
+  "config": {
+    "vendor-dir": "src/vendor",
+    "preferred-install": "dist"
+  },
+
+  "repositories": []
+}
