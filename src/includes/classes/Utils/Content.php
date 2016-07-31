@@ -1,4 +1,10 @@
 <?php
+/**
+ * Content utils.
+ *
+ * @author @jaswsinc
+ * @copyright WP Sharks™
+ */
 declare (strict_types = 1);
 namespace WebSharks\WpSharks\Preserve\Classes\Utils;
 
@@ -34,7 +40,7 @@ class Content extends SCoreClasses\SCore\Base\Core
      *
      * @since 160722.57589 Content utils.
      *
-     * @type array|null
+     * @var array|null
      */
     protected $Tokenizers;
 

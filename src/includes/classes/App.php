@@ -1,4 +1,10 @@
 <?php
+/**
+ * Application.
+ *
+ * @author @jaswsinc
+ * @copyright WP Sharks™
+ */
 declare (strict_types = 1);
 namespace WebSharks\WpSharks\Preserve\Classes;
 
@@ -23,7 +29,7 @@ use function assert as debug;
 use function get_defined_vars as vars;
 
 /**
- * App class.
+ * Application.
  *
  * @since 160722.57589 Initial release.
  */
@@ -34,9 +40,9 @@ class App extends SCoreClasses\App
      *
      * @since 160722.57589 Initial release.
      *
-     * @type string Version.
+     * @var string Version.
      */
-    const VERSION = '160722.57918'; //v//
+    const VERSION = '160731.37913'; //v//
 
     /**
      * Constructor.
