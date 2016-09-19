@@ -57,7 +57,10 @@ class Content extends SCoreClasses\SCore\Base\Core
     {
         $content = (string) $content;
 
-        if (mb_strpos($content, '[') === false) {
+        if (!$content) {
+            $this->Tokenizers[] = null;
+            return $content; // Nothing to do.
+        } elseif (mb_strpos($content, '[') === false) {
             $this->Tokenizers[] = null;
             return $content; // Nothing to do.
         } elseif (!preg_match('/\<(?:pre|code|samp)/ui', $content)) {
@@ -87,9 +90,10 @@ class Content extends SCoreClasses\SCore\Base\Core
             return $content; // Nothing to do.
         } elseif (!($Tokenizer = array_pop($this->Tokenizers))) {
             return $content; // Nothing to do.
-        } // Pops last tokenizer off the stack ↑ also.
+        } // Also pops last tokenizer off the stack.
 
-        $Tokenizer->setString($content);
+        $Tokenizer->setString($content); // As it exists now.
+
         return $content = $Tokenizer->restoreGetString();
     }
 }
